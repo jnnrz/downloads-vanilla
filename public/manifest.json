@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "DownloadsVanilla",
+  "version": "1.0.0",
+  "description": "Download manager in a box",
+  "icons": {
+    "48": "images/icon64.png",
+    "64": "images/icon64.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "images/down24.png",
+      "24": "images/down24.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "downloads",
+    "downloads.open",
+    "downloads.shelf",
+    "storage",
+    "contextMenus"
+  ]
+}

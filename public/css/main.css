@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  position: relative;
+  width: 450px;
+  min-height: 50px;
+}
+
+#empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: inherit;
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+}
+
+#clr-button {
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  z-index: 999;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.download {
+  display: grid;
+  grid-template-columns: 50px 360px 30px;
+  padding: 6px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.download:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6px;
+}
+
+.info .filename a {
+  color: rgb(9, 110, 243);
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.info .file-address {
+  color: gray;
+  font-size: 12px;
+  padding: 2px 0;
+}
+
+.info .file-size {
+  color: gray;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 2px 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.actions button img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.actions button:hover {
+  transform: scale(0.95);
+}
+
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hidden {
+  display: none !important;
+}
